@@ -8,7 +8,6 @@
     font-family: "Gruppo", sans-serif;
     font-weight: 400;
     font-style: normal;
-    
 }
 
  
@@ -34,7 +33,6 @@ html {
     position: fixed;
     z-index: 99;
     width: 100%;
-    
   }
 
   .nav .logo{
@@ -68,7 +66,6 @@ html {
   
   .nav-menu li {
     align-self: center;
-    
   }
   
   .nav-menu a {
@@ -124,6 +121,7 @@ html {
     width: 100%;
     padding: 5.5em 2em;
     position: relative;
+    overflow: hidden;
 }
 
 
@@ -196,7 +194,6 @@ html {
     display: flex;
     align-items: end;
     padding: 40px;
-   
 }
 
 .container .card .content .details{
@@ -257,10 +254,6 @@ footer .socials i:hover{
         font-size: 80px;
     }
 
-    footer p{
-        font-size: 10px;
-    }
-
     footer a{
         padding: 0;
     }
@@ -285,7 +278,7 @@ footer .socials i:hover{
         font-size: 18px;
     }
 
-    .card .content .details h4 ,p{
+    .card .content .details h4{
         font-size: 12px;
     }
 
@@ -296,16 +289,18 @@ footer .socials i:hover{
     .container .card .content .details{
         margin: 10px 0;
     }
+}
 
-    footer a{
-        padding: 0;
-        font-size: 12px;
-    }
-    
-    footer .socials i{
-        padding: 0 8px;
+@media (max-width:425px){
+    .container .card .content p{
         font-size: 10px;
     }
+
+    footer .socials i{
+        padding: 0 10px;
+        font-size: 20px;
+    }    
+
 }
 
 /* media queries section ends here*/
